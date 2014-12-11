@@ -1,0 +1,49 @@
+html {
+  margin: 0;
+  padding: 0;
+}
+/* Colors
+-----------------------------------------------------------------------------*/
+body {
+  background: #d2d2d2;
+  color: #393939;
+  padding-top: 30px;
+}
+.nav a {
+  color: #393939;
+}
+.nav a#current{
+  color: #858585;
+}
+/* #523a3a #855d5d */
+/* Alignment
+-----------------------------------------------------------------------------*/
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+/* Font Sizes
+-----------------------------------------------------------------------------*/
+.smallcaps {
+  font-size: 0.8em;
+}
+#side-nav {
+  font-size: 1em;
+  float: left;
+}
+/* Tables
+-----------------------------------------------------------------------------*/
+tbody tr:hover {
+  background-color: #92baf6;
+}
+#records td:nth-child(2), #records th:nth-child(2) {
+  text-align: center;
+}
+#records td:nth-child(3), #records th:nth-child(3) {
+  text-align: center;
+}
+#calendar tbody tr:hover {
+  background-color: #d2d2d2;
+}

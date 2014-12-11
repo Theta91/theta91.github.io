@@ -5,24 +5,16 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="css/kube.min.css" />
+  <link rel="stylesheet" href="css/custom.css" />
   <script src="js/jquery-2.1.1.min.js"></script>
   <script src="js/kube.min.js"></script>
-  <style>
-    html { margin:0; padding:0; font-size:24px;}
-    body { background:#f6f6f6; color:#393939; font-size:62.5%; padding-top:20px; }
-    .center { text-align:center; }
-    .left { text-align:left; }
-    #side-nav { font-size:1em; }
-    .nav a { color:#393939; }
-    td:nth-child(2), th:nth-child(2) { text-align:center; }
-    td:nth-child(3), th:nth-child(3) { text-align:center; }
-    tbody tr:hover { background-color:#92baf6; }
-  </style>
+  <script src="js/jquery.sticky-kit.min.js"></script>
+  <script src="js/jquery.sticky-kit.sticky-nav.js"></script>
 </head>
 
 <body>
-  <div class="units-row units-padding">
-    <div id="side-nav"; class="unit-push-10 unit-20">
+  <div class="units-row units-padding" sticky_parent>
+    <div id="side-nav"; class="unit-push-10 unit-20" sticky_nav>
       <nav class="nav nav-stacked">
         <ul>
           <li> <a href="index.html">Calendar</a> </li>
@@ -34,399 +26,404 @@
       </nav>
     </div>
     <div class="unit-push-10 unit-60">
+      <h2>All-time Records Page</h2>
       <p>VCU's all-time record versus every opponent we've played, as of November 22, 2009.</p>
-      <table class="table-flat">
-        <thead>
-          <tr>
-            <th class="width-60">Team</th>
-            <th class="width-20">Wins</th>
-            <th class="width-20">Losses</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Alabama A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Athens State A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Baldwin Wallace A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Berkeley A</td> <td>0</td> <td>2</td>
-          </tr>
-          <tr>
-            <td>Boston A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Bowling Green A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Brandeis A</td> <td>7</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Brown A</td> <td>2</td> <td>8</td>
-          </tr>
-          <tr>
-            <td>Bucknell A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Cal Tech A</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Carleton A</td> <td>4</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Carnegie Mellon A</td> <td>9</td> <td>7</td>
-          </tr>
-          <tr>
-            <td>Carnegie Mellon B</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Case Western A</td> <td>4</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Case Western B</td> <td>0</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Chicago A</td> <td>2</td> <td>8</td>
-          </tr>
-          <tr>
-            <td>Chicago B</td> <td>1</td> <td>4</td>
-          </tr>
-          <tr>
-            <td>Chicago C</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Chicago D</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Clemson A</td> <td>2</td> <td>3</td>
-          </tr>
-          <tr>
-            <td>Columbia A</td> <td>6</td> <td>2</td>
-          </tr>
-          <tr>
-            <td>Columbia B</td> <td>3</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Columbia D</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Cornell A</td> <td>5</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Dartmouth A</td> <td>2</td> <td>2</td>
-          </tr>
-          <tr>
-            <td>Dartmouth B</td> <td>0</td> <td>2</td>
-          </tr>
-          <tr>
-            <td>Delaware A</td> <td>13</td> <td>2</td>
-          </tr>
-          <tr>
-            <td>Delaware B</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Drake A</td> <td>0</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Duke A</td> <td>8</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Duke B</td> <td>5</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Emory A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Florida A</td> <td>0</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Florida State A</td> <td>3</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>George Mason</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>George Washington A</td> <td>9</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Georgetown A</td> <td>4</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Georgia Tech A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Georgia A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Harvard A</td> <td>4</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Harvard B</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Hunter-CUNY</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Illinois A</td> <td>1</td> <td>4</td>
-          </tr>
-          <tr>
-            <td>Illinois B</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Iowa A</td> <td>1</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Johns Hopkins A</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Johns Hopkins B</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Johns Hopkins C</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>J Sargeant Reynolds A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Kentucky A</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Liberty B</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Louisiana State A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Loyola</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Macalester A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Maryland A</td> <td>20</td> <td>30</td>
-          </tr>
-          <tr>
-            <td>Maryland B</td> <td>17</td> <td>7</td>
-          </tr>
-          <tr>
-            <td>Maryland C</td> <td>3</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Maryland-Baltimore A</td> <td>5</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Maryland-Baltimore B</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Michigan A</td> <td>3</td> <td>9</td>
-          </tr>
-          <tr>
-            <td>Michigan B</td> <td>1</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Michigan State B</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Minnesota A</td> <td>0</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Minnesota B</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Mississippi A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Missouri A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Missouri S&amp;T A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Missouri State A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>MIT</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>NC State A</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>NC State B</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>New School A</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>NYU A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>North Carolina A</td> <td>12</td> <td>6</td>
-          </tr>
-          <tr>
-            <td>North Carolina B</td> <td>5</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>North Carolina C</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>North Carolina Wesleyan A</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>North Carolina Wesleyan B</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Northwestern B</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Open Teams</td> <td>40</td> <td>19</td>
-          </tr>
-          <tr>
-            <td>Ottawa A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Penn A</td> <td>12</td> <td>2</td>
-          </tr>
-          <tr>
-            <td>Penn B</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Penn C</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Pitt A</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Pitt B</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Princeton A</td> <td>15</td> <td>11</td>
-          </tr>
-          <tr>
-            <td>Princeton B</td> <td>4</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Rice A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Roanoke</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Rochester A</td> <td>6</td> <td>4</td>
-          </tr>
-          <tr>
-            <td>Rochester B</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Rochester D</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Rutgers A</td> <td>16</td> <td>2</td>
-          </tr>
-          <tr>
-            <td>Rutgers B</td> <td>4</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Rutgers-Newark A</td> <td>4</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>South Carolina A</td> <td>12</td> <td>3</td>
-          </tr>
-          <tr>
-            <td>South Carolina B</td> <td>4</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Southern Virginia A</td> <td>7</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>South Florida A</td> <td>1</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>South Florida B</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Stanford A</td> <td>2</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>St. Olaf A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Swarthmore A</td> <td>12</td> <td>3</td>
-          </tr>
-          <tr>
-            <td>Swarthmore B</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Temple A</td> <td>1</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Tennessee-Chattanooga</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Texas A</td> <td>0</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Texas A&amp;M A</td> <td>1</td> <td>3</td>
-          </tr>
-          <tr>
-            <td>UC-Irvine A</td> <td>0</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>UCLA A</td> <td>4</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>UCSD A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Vanderbilt A</td> <td>4</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Villanova A</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Virginia A</td> <td>16</td> <td>6</td>
-          </tr>
-          <tr>
-            <td>Virginia B</td> <td>4</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Virginia Tech A</td> <td>6</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Virginia Tech B</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Wake Forest A</td> <td>5</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Wake Forest B</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Washington-St Louis B</td> <td>2</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>William &amp; Mary A</td> <td>4</td> <td>3</td>
-          </tr>
-          <tr>
-            <td>William &amp; Mary B</td> <td>4</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>William &amp; Mary C</td> <td>1</td> <td>0</td>
-          </tr>
-          <tr>
-            <td>Williams A</td> <td>0</td> <td>2</td>
-          </tr>
-          <tr>
-            <td>Yale A</td> <td>2</td> <td>1</td>
-          </tr>
-          <tr>
-            <td>Yale D</td> <td>1</td> <td>0</td>
-          </tr>
-        </tbody>
-      </table>
+      <div class="units-row end">
+        <div class="unit-centered unit-60">
+          <table id="records" class="table-flat">
+            <thead>
+              <tr>
+                <th class="width-60">Team</th>
+                <th class="width-20">Wins</th>
+                <th class="width-20">Losses</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Alabama A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Athens State A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Baldwin Wallace A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Berkeley A</td> <td>0</td> <td>2</td>
+              </tr>
+              <tr>
+                <td>Boston A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Bowling Green A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Brandeis A</td> <td>7</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Brown A</td> <td>2</td> <td>8</td>
+              </tr>
+              <tr>
+                <td>Bucknell A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Cal Tech A</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Carleton A</td> <td>4</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Carnegie Mellon A</td> <td>9</td> <td>7</td>
+              </tr>
+              <tr>
+                <td>Carnegie Mellon B</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Case Western A</td> <td>4</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Case Western B</td> <td>0</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Chicago A</td> <td>2</td> <td>8</td>
+              </tr>
+              <tr>
+                <td>Chicago B</td> <td>1</td> <td>4</td>
+              </tr>
+              <tr>
+                <td>Chicago C</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Chicago D</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Clemson A</td> <td>2</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>Columbia A</td> <td>6</td> <td>2</td>
+              </tr>
+              <tr>
+                <td>Columbia B</td> <td>3</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Columbia D</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Cornell A</td> <td>5</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Dartmouth A</td> <td>2</td> <td>2</td>
+              </tr>
+              <tr>
+                <td>Dartmouth B</td> <td>0</td> <td>2</td>
+              </tr>
+              <tr>
+                <td>Delaware A</td> <td>13</td> <td>2</td>
+              </tr>
+              <tr>
+                <td>Delaware B</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Drake A</td> <td>0</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Duke A</td> <td>8</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Duke B</td> <td>5</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Emory A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Florida A</td> <td>0</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Florida State A</td> <td>3</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>George Mason</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>George Washington A</td> <td>9</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Georgetown A</td> <td>4</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Georgia Tech A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Georgia A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Harvard A</td> <td>4</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Harvard B</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Hunter-CUNY</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Illinois A</td> <td>1</td> <td>4</td>
+              </tr>
+              <tr>
+                <td>Illinois B</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Iowa A</td> <td>1</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Johns Hopkins A</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Johns Hopkins B</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Johns Hopkins C</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>J Sargeant Reynolds A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Kentucky A</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Liberty B</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Louisiana State A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Loyola</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Macalester A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Maryland A</td> <td>20</td> <td>30</td>
+              </tr>
+              <tr>
+                <td>Maryland B</td> <td>17</td> <td>7</td>
+              </tr>
+              <tr>
+                <td>Maryland C</td> <td>3</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Maryland-Baltimore A</td> <td>5</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Maryland-Baltimore B</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Michigan A</td> <td>3</td> <td>9</td>
+              </tr>
+              <tr>
+                <td>Michigan B</td> <td>1</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Michigan State B</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Minnesota A</td> <td>0</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Minnesota B</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Mississippi A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Missouri A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Missouri S&amp;T A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Missouri State A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>MIT</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>NC State A</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>NC State B</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>New School A</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>NYU A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>North Carolina A</td> <td>12</td> <td>6</td>
+              </tr>
+              <tr>
+                <td>North Carolina B</td> <td>5</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>North Carolina C</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>North Carolina Wesleyan A</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>North Carolina Wesleyan B</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Northwestern B</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Open Teams</td> <td>40</td> <td>19</td>
+              </tr>
+              <tr>
+                <td>Ottawa A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Penn A</td> <td>12</td> <td>2</td>
+              </tr>
+              <tr>
+                <td>Penn B</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Penn C</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Pitt A</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Pitt B</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Princeton A</td> <td>15</td> <td>11</td>
+              </tr>
+              <tr>
+                <td>Princeton B</td> <td>4</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Rice A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Roanoke</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Rochester A</td> <td>6</td> <td>4</td>
+              </tr>
+              <tr>
+                <td>Rochester B</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Rochester D</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Rutgers A</td> <td>16</td> <td>2</td>
+              </tr>
+              <tr>
+                <td>Rutgers B</td> <td>4</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Rutgers-Newark A</td> <td>4</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>South Carolina A</td> <td>12</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>South Carolina B</td> <td>4</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Southern Virginia A</td> <td>7</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>South Florida A</td> <td>1</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>South Florida B</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Stanford A</td> <td>2</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>St. Olaf A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Swarthmore A</td> <td>12</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>Swarthmore B</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Temple A</td> <td>1</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Tennessee-Chattanooga</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Texas A</td> <td>0</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Texas A&amp;M A</td> <td>1</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>UC-Irvine A</td> <td>0</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>UCLA A</td> <td>4</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>UCSD A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Vanderbilt A</td> <td>4</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Villanova A</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Virginia A</td> <td>16</td> <td>6</td>
+              </tr>
+              <tr>
+                <td>Virginia B</td> <td>4</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Virginia Tech A</td> <td>6</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Virginia Tech B</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Wake Forest A</td> <td>5</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Wake Forest B</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Washington-St Louis B</td> <td>2</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>William &amp; Mary A</td> <td>4</td> <td>3</td>
+              </tr>
+              <tr>
+                <td>William &amp; Mary B</td> <td>4</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>William &amp; Mary C</td> <td>1</td> <td>0</td>
+              </tr>
+              <tr>
+                <td>Williams A</td> <td>0</td> <td>2</td>
+              </tr>
+              <tr>
+                <td>Yale A</td> <td>2</td> <td>1</td>
+              </tr>
+              <tr>
+                <td>Yale D</td> <td>1</td> <td>0</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
     </div>
   </div>
 </body>
