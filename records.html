@@ -1,61 +1,46 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta name="description" content="Quizbowl at VCU's record by opponent" />
-    <title>Record by Opponent: Quizbowl at VCU</title>
-    <link href='http://fonts.googleapis.com/css?family=Exo+2:400,700' rel='stylesheet' type='text/css'>
-    <!--<link href='http://fonts.googleapis.com/css?family=Lora:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Sorts+Mill+Goudy' rel='stylesheet' type='text/css'>-->
-    <link href='http://fonts.googleapis.com/css?family=Vollkorn:400,700' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat:400' rel='stylesheet' type='text/css'>
-    <style type="text/css">
-      html, body { margin: 0; padding: 0; }
-      body { font-size:62.5%; background: #589199; }
-      #masthead { background: #394a58; width: 100%; margin-bottom: 41px; border-bottom: 5px solid rgba(0, 0, 0, 0.13); overflow: hidden; }
-      #masthead nav { font-family: 'Montserrat', sans-serif; font-size: 1.5em; text-align: right; width: calc(100% - 124px); display: inline-block; }
-      #masthead nav ul { text-align: center; display: inline-block; list-style: none; padding: 0; overflow: hidden;}
-      #masthead nav ul li { float: left; }
-      #masthead nav ul li a { color: #f8b800; display: block; padding: 4px 8px; }
-      #masthead nav ul li a#current { text-decoration: none; }
-      #masthead nav ul li a:hover { text-decoration: none; }
-      #logo { width: 120px; float: left;}
-      p { font-family: 'Exo 2', sans-serif; font-size: 1.4em; }
-      .center { text-align: center; }
-      .left { text-align: left; }
-      .W-Ltable { font-family: 'Exo 2', sans-serif; font-size: 1.2em; margin: 0px auto; width: 340px; border-collapse: collapse; table-layout: fixed; }
-      thead { background: #000000; color: #f8b800; }
-      thead tr { display: block; position: relative; }
-      thead tr th { padding: 8px 8px; }
-      tbody { background: #f8b800; color: #000000; width: 100%; height: 600px; display: block; overflow: auto; }
-      tbody tr td { text-align: left; padding: 2px 8px; }
-      td:nth-child(1), th:nth-child(1) { min-width: 180px; }
-      td:nth-child(2), th:nth-child(2) { width: 40px; text-align: center; }
-      td:nth-child(3), th:nth-child(3) { width: 40px; text-align: center; }
-    </style>
-  </head>
-  <body>
-    <header id="masthead">
-      <a href="/" title="Home"><img src="http://hsquizbowl.org/vcuqb_files/vcuqb.gif" alt="Quizbowl at VCU logo" id="logo" /></a>
-      <nav>
+<head>
+  <title>VCUQB &middot; Record v. Opponent</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="css/kube.min.css" />
+  <script src="js/jquery-2.1.1.min.js"></script>
+  <script src="js/kube.min.js"></script>
+  <style>
+    html { margin:0; padding:0; font-size:24px;}
+    body { background:#f6f6f6; color:#393939; font-size:62.5%; padding-top:20px; }
+    .center { text-align:center; }
+    .left { text-align:left; 
+}    #side-nav { font-size:1em; }
+    .nav a { color:#393939; }
+    td:nth-child(2), th:nth-child(2) { text-align:center; }
+    td:nth-child(3), th:nth-child(3) { text-align:center; }
+    tbody tr:hover { background-color:#92baf6; }
+  </style>
+</head>
+
+<body>
+  <div class="units-row units-padding">
+    <div id="side-nav"; class="unit-push-10 unit-20">
+      <nav class="nav nav-stacked">
         <ul>
-          <li> <a href="http://www.hsquizbowl.org/vcuqb/index.html">Calendar</a> </li>
-          <li> <a href="http://www.hsquizbowl.org/vcuqb/hs.html">High School Tournaments at VCU</a> </li>
-          <li> <a href="http://www.hsquizbowl.org/vcuqb/practice.html">Practice Schedule</a> </li>
-          <li> <a href="http://www.hsquizbowl.org/vcuqb/history.html">History</a> </li>
-          <li> <a href="http://www.hsquizbowl.org/vcuqb/record.html" id="current">Record by Opponent</a> </li>
+          <li> <a href="index.html">Calendar</a> </li>
+          <li> <a href="tournaments.html">Our Tournaments</a> </li>
+          <li> <a href="practice.html">Practice Schedule</a> </li>
+          <li> <a href="history.html">History</a> </li>
+          <li class="active"> <a href="records.html" id="current">Record v. Opponent</a> </li>
         </ul>
       </nav>
-    </header>
-    <p class="center">
-      VCU's all-time record versus every opponent we have played, as of November 22, 2009.
-    </p>
-    <br />
-    <div class="center">
-      <table class="W-Ltable">
+    </div>
+    <div class="unit-push-10 unit-60">
+      <p>VCU's all-time record versus every opponent we've played, as of November 22, 2009.</p>
+      <table class="table-flat">
         <thead>
           <tr>
-            <th>Team</th> <th>Wins</th> <th>Losses</th>
+            <th class="width-60">Team</th>
+            <th class="width-20">Wins</th>
+            <th class="width-20">Losses</th>
           </tr>
         </thead>
         <tbody>
@@ -443,5 +428,6 @@
         </tbody>
       </table>
     </div>
-  </body>
+  </div>
+</body>
 </html>
